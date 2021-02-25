@@ -1,0 +1,28 @@
+1. Find the length of the list by using default method and loop
+[1, 4, 5, 7, 8]
+
+2. Insert the element '10' in between 5 and 7 and print all the elements
+[1, 4, 5, 7, 8]
+
+3. Remove the element 5 and 1 from the list then print
+[1, 4, 5, 7, 8]
+
+5. Merge the 2 lists and print all elements
+l1 = [1, 4, 5, 7, 8], l2 = [4,3,4,7,2,1]
+
+6. Print the list in reverse order
+[1, 4, 5, 7, 8]
+
+7. Print All the sum of elements in the list
+[1, 4, 5, 7, 8]
+
+8. check if the user entered element exists in the given list. if present Print True, else False
+[1, 4, 5, 7, 8]
+
+9. Count the occurrence of each element in the give list [10, 20, 4, 45, 99, 99, 1, 2, 5, 8, 99, 20, 56]
+
+10. Print the positive no in the list
+[12, -7, 5, 64, -14]
+
+11. sort the list then print
+[10, 20, 4, 45, 99, 99, 1, 2, 5, 8, 99, 20, 56]
