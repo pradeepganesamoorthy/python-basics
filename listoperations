@@ -26,3 +26,64 @@ l1 = [1, 4, 5, 7, 8], l2 = [4,3,4,7,2,1]
 
 11. sort the list then print
 [10, 20, 4, 45, 99, 99, 1, 2, 5, 8, 99, 20, 56]
+
+
+
+class customer:
+
+	def createcustomer(self,customer_id=0,address=None,mobile_no=0,customer_name=None):
+		customer_id = input ("Enter Customer ID: ")
+		customer_name = input ("Enter Customer Name: ")
+		address = input ("Enter the Address: ")
+		mobile_no = input ("Enter the mobile number: ")
+		
+
+		print ("Customer ID", customer_id)
+		print ("Customer Name", customer_name)
+		print ("Customer Address", address)
+		print ("Customer mobile number", mobile_no)
+		
+class product(customer):
+	def createproduct(self,product_id, product_name, pro_unit_price,pro_quantity):
+		print ("Product ID",product_id)
+		print ("Product Name", product_name)
+		print ("Unit price of the product", pro_unit_price)
+		print ("Product quantity", pro_quantity)
+class invoice(product):
+	def create_invoice(self, Customer_name,C_product_name,C_pro_quantity,C_sub_total):
+		print ("Customer name",Customer_name)
+		print ("Product name", C_product_name)
+		print ("Product quantity", C_pro_quantity)
+		print ("Subtotal", C_sub_total)
+
+i = invoice()
+c = customer()
+p =product()
+
+customer_list=[]
+no_cus = input("Entre the number of customer you want to add: ")
+for a in range(no_cus):	
+	c.createcustomer()
+	#customer_list.append(b.customer_id)
+	
+	
+	
+
+#################################tuple########################
+customer_list=[]
+print ("What operation your going to do \n 1.Create customer \n 2.create product \n 3.Purchase \n")
+op_no = input ("Enter the operation number you want to perform: ")
+
+if op_no == 1:
+	c_no = input ("Enter the number of customer you want to create: ")
+	for i in range(c_no):
+		p = purchase()
+		customer_list.append(p.create_customer())
+		
+
+for index ,val in enumerate(customer_list):
+	p1 =purchase()
+	p1.display_customer(val[index])
+
+
+
